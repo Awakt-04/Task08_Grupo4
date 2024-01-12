@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Task08_Grupo04</string>
+    <string name="Email">E-mail</string>
+    <string name="Password">Contraseña</string>
+    <string name="SignIn">Registrar</string>
+    <string name="LogIn">Inicio Sesión</string>
+</resources>
