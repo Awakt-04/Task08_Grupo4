@@ -4,4 +4,34 @@
     <string name="Password">Contraseña</string>
     <string name="SignIn">Registrar</string>
     <string name="LogIn">Inicio Sesión</string>
+    <string name="Username">Nombre Usuario</string>
+    <string name="Gender">Sexo:</string>
+    <string name="Hobbies">Aficiones:</string>
+    <string name="Nationality">Nacionalidad:</string>
+    <string name="Tenis">Tenis</string>
+    <string name="Football">Fútbol</string>
+    <string name="CV">CV Resumido:</string>
+    <string-array name="Paises">
+        <item>Albania</item>    <item>Indonesia</item>    <item>Alemania</item>    <item>Irak</item>
+        <item>Angola</item>    <item>Irlanda (Eire)</item>    <item>Antigua y Barbuda</item>    <item>Islas Feroe</item>
+        <item>Argentina</item>    <item>Islas Vírgenes (Norteamericanas)</item>    <item>Aruba</item>    <item>Israel</item>
+        <item>Australia</item>    <item>Italia</item>    <item>Bahamas</item>    <item>Jamaica</item>
+        <item>Bangladesh</item>    <item>Japón</item>    <item>Barbados</item>    <item>Letonia</item>
+        <item>Bélgica</item>    <item>Líbano</item>    <item>Belice</item>    <item>Malasia</item>
+        <item>Bolivia</item>    <item>Martinica</item>    <item>Brasil</item>    <item>México</item>
+        <item>Canadá</item>    <item>Nicaragua</item>    <item>Chile</item>    <item>Nigeria</item>
+        <item>China (Continental)</item>    <item>Noruega</item>    <item>China-Taiwán (Formosa)</item>    <item>Otras de las Indias Occidentales Británicas</item>
+        <item>Colombia</item>    <item>Países Bajos</item>    <item>Corea del Sur</item>    <item>Pakistán</item>
+        <item>Costa Rica</item>    <item>Paraguay</item>    <item>Cuba</item>    <item>Perú</item>
+        <item>Curazao</item>    <item>Polonia</item>    <item>Dinamarca</item>    <item>Portugal</item>
+        <item>Dominica</item>    <item>Puerto Rico</item>    <item>Ecuador</item>    <item>Reino Unido</item>
+        <item>El Salvador</item>    <item>República Dominicana</item>    <item>Emiratos Árabes Unidos</item>    <item>Rusia</item>
+        <item>España</item>    <item>San Martín (Parte Sur)</item>    <item>Estados Unidos de América</item>    <item>Santa Lucía</item>
+        <item>Francia</item>    <item>Sri Lanka</item>    <item>Gambia</item>    <item>Suecia</item>
+        <item>Ghana</item>    <item>Suiza</item>    <item>Granada</item>    <item>Suriname</item>
+        <item>Grecia</item>    <item>Tailandia</item>    <item>Guadalupe y Dependencias</item>    <item>Trinidad y Tobago</item>
+        <item>Guatemala</item>    <item>Turquía</item>    <item>Guyana</item>    <item>Uruguay</item>
+        <item>Haití</item>    <item>Venezuela</item>    <item>Honduras</item>    <item>Vietnam</item>
+        <item>Hong Kong</item>    <item>Zona Libre de Colón (Panamá)</item>
+    </string-array>
 </resources>
