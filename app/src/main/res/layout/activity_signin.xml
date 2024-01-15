@@ -6,116 +6,133 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/nombreEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="60dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Username"
         android:inputType="text"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="60dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Password"
         android:inputType="textPassword"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/maleRadioButton"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="RadioButton"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        android:text="@string/Hombre"
+        app:layout_constraintBottom_toTopOf="@+id/nationSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/femaleRadioButton"
+        app:layout_constraintStart_toEndOf="@+id/genderText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
         app:layout_constraintVertical_bias="0.5" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/femaleRadioButton"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="RadioButton"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        android:text="@string/Mujer"
+        app:layout_constraintBottom_toTopOf="@+id/nationSpinner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toEndOf="@+id/maleRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/nationSpinner"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:entries="@array/Paises"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintBottom_toBottomOf="@+id/nationText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintStart_toEndOf="@+id/nationText"
+        app:layout_constraintTop_toBottomOf="@+id/maleRadioButton" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/nationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:text="@string/Nationality"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.5"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintBottom_toTopOf="@+id/hobbiesText"
+        app:layout_constraintEnd_toStartOf="@+id/nationSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderText"
+        app:layout_constraintVertical_bias="0.5" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/tenisCheckBox"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="1dp"
         android:text="@string/Tenis"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        tools:layout_editor_absoluteX="137dp" />
+        app:layout_constraintEnd_toStartOf="@+id/footballCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/hobbiesText"
+        app:layout_constraintTop_toBottomOf="@+id/nationSpinner" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/footballCheckBox"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
         android:text="@string/Football"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        tools:layout_editor_absoluteX="274dp" />
+        app:layout_constraintStart_toEndOf="@+id/tenisCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/nationSpinner" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="235dp"
         android:text="@string/CV"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
-        tools:layout_editor_absoluteX="38dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenisCheckBox" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
+        android:layout_width="0dp"
         android:layout_height="150dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="start|top"
+        android:hint="@string/ContentMultiLine"
         android:inputType="textMultiLine"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -125,44 +142,53 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="204dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        tools:layout_editor_absoluteX="1dp" />
+        android:layout_marginEnd="1dp"
+        android:text="@string/CancelButton"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="204dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        tools:layout_editor_absoluteX="206dp" />
+        android:layout_marginEnd="1dp"
+        android:text="@string/SignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/genderText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/Gender"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton"
+        app:layout_constraintBottom_toTopOf="@+id/nationSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/maleRadioButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/hobbiesText"
         android:layout_width="135dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:text="@string/Hobbies"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.047"
-        tools:layout_editor_absoluteX="2dp" />
+        app:layout_constraintEnd_toStartOf="@+id/tenisCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nationSpinner"
+        app:layout_constraintVertical_bias="0.047" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
