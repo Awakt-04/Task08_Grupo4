@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "263044299345",
+    "project_id": "task08-grupo4",
+    "storage_bucket": "task08-grupo4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263044299345:android:0091bf18d29b88ebea1670",
+        "android_client_info": {
+          "package_name": "com.example.task08_grupo4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCG1jAJzJo01ZcKLH7Y8-C4fefXCbhDMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
