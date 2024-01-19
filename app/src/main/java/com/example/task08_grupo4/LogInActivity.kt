@@ -1,9 +1,7 @@
 package com.example.task08_grupo4
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class LogInActivity : AppCompatActivity() {
@@ -12,8 +10,11 @@ class LogInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // Declaración, inicialización y obtención de valores de variable
         val email = intent.getStringExtra("Usuario")
+        // Asignación a elemento XML
         bienvenido= findViewById(R.id.Bienvenido)
+        // Modificación valor de texto
         bienvenido.text = "Bienvenido, $email"
     }
 }

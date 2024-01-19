@@ -15,6 +15,7 @@
     <string name="Hombre">Hombre</string>
     <string name="Mujer">Mujer</string>
     <string name="CancelButton">Cancelar</string>
+    <string name="ImageDescription">Simbolo logIn\n</string>
     <string-array name="Paises">
         <item>Albania</item>    <item>Indonesia</item>    <item>Alemania</item>    <item>Irak</item>
         <item>Angola</item>    <item>Irlanda (Eire)</item>    <item>Antigua y Barbuda</item>    <item>Islas Feroe</item>

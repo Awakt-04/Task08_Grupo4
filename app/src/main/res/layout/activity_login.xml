@@ -6,6 +6,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LogInActivity">
 
+<!-- Mensaje de bienvenida
+
+        android:id -> id referencia
+        android:layout_width -> ancho elemento
+        android:layout_height -> altura elemento
+        android:text -> texto
+        android:textSize -> tamaño texto
+        app:layout_constraintTop_toTopOf -> restricción margen superior
+        app:layout_constraintLeft_toLeftOf -> restricción margen izquierdo
+        app:layout_constraintRight_toRightOf -> restricción margen derecho
+        android:layout_marginTop -> margen superior
+        android:gravity -> posición del texto
+
+-->
     <TextView
         android:id="@+id/Bienvenido"
         android:layout_width="wrap_content"

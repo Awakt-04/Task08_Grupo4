@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LoginButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/green_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="SigninButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/grey_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+</resources>

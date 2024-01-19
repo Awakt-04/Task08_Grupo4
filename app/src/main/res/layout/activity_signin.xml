@@ -5,8 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<!--    Campo de entrada para el mail del usuario
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginStart -> margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:layout_marginEnd -> margen derecho
+        android:autofillHints -> autorelleno
+        android:ems -> tamaño de fuente
+        android:hint -> texto de pista
+        android:inputType -> tipo de entrada
+        android:textColorHint -> color de texto de pista
+        app:layout_constraintEnd_toEndOf ->  restricción margen derecho
+        app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+        app:layout_constraintTop_toTopOf -> restricción margen superior
+
+-->
+
     <EditText
-        android:id="@+id/nombreEditText"
+        android:id="@+id/mailEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="60dp"
@@ -20,6 +39,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+<!--    Campo de entrada de contraseña
+
+        android:id -> id de referencia
+        android:layout_width -> ancho de elemento
+        android:layout_height -> alto de elemento
+        android:layout_marginStart -> margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:layout_marginEnd -> margen derecho
+        android:autofillHints -> autorelleno
+        android:ems -> tamaño de fuente
+        android:hint -> texto de pista
+        android:inputType -> campo de entrada
+        android:textColorHint -> color de texto de pista
+        app:layout_constraintEnd_toEndOf -> restricción margen derecho
+        app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+        app:layout_constraintTop_toBottomOf -> restricción margen superior
+-->
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -35,7 +72,23 @@
         android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/mailEditText" />
+
+<!--    Texto para el género
+
+            android:id -> id referencia
+            android:layout_width -> ancho de elemento
+            android:layout_height -> alto de elemento
+            android:layout_marginLeft -> margen izquierdo
+            android:gravity -> alineación del texto
+            android:text -> texto
+            android:textAppearance -> estilo del texto
+            app:layout_constraintBottom_toTopOf -> restricción margen
+            app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+            app:layout_constraintTop_toBottomOf -> restricción margen superior
+            app:layout_constraintVertical_bias -> restricción vertical
+
+    -->
 
     <TextView
         android:id="@+id/genderText"
@@ -50,6 +103,21 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
         app:layout_constraintVertical_bias="0.5" />
 
+<!--    Grupo de radio para el género
+
+        android:id ->  id referencia
+        android:layout_width -> ancho de elemento
+        android:layout_height -> alto de elemento
+        android:layout_marginLeft -> margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:orientation -> orientación del grupo
+        app:layout_constraintEnd_toEndOf -> restricción margen derecho
+        app:layout_constraintHorizontal_bias -> restricción horizontal
+        app:layout_constraintStart_toEndOf -> restricción margen izquierdo
+        app:layout_constraintTop_toBottomOf -> restricción margen superior
+
+-->
+
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="0dp"
@@ -62,6 +130,17 @@
         app:layout_constraintStart_toEndOf="@+id/genderText"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditText">
 
+<!--    Opción de género: Hombre
+
+            android:id -> id referencia
+            android:layout_width -> ancho de elemento
+            android:layout_height -> altura de elemento
+            android:text -> texto
+            tools:layout_editor_absoluteX -> posición absoluta en la coordenada X
+            tools:layout_editor_absoluteY -> posición absoluta en la coordenada Y
+
+-->
+
         <RadioButton
             android:id="@+id/maleRadioButton"
             android:layout_width="wrap_content"
@@ -70,6 +149,16 @@
             tools:layout_editor_absoluteX="60dp"
             tools:layout_editor_absoluteY="194dp" />
 
+<!--    Opción de género: Mujer
+
+            android:id -> id referencia
+            android:layout_width -> ancho de elemento
+            android:layout_height -> altura de elemento
+            android:text -> texto
+            tools:layout_editor_absoluteX -> posición absoluta en la coordenada X
+            tools:layout_editor_absoluteY -> posición absoluta en la coordenada Y
+
+-->
         <RadioButton
             android:id="@+id/femaleRadioButton"
             android:layout_width="wrap_content"
@@ -78,6 +167,24 @@
             tools:layout_editor_absoluteX="144dp"
             tools:layout_editor_absoluteY="194dp" />
     </RadioGroup>
+
+<!--    Selector de país
+
+        android:id -> id referencia
+        android:layout_width -> ancho de elemento
+        android:layout_height -> altura de elemento
+        android:layout_marginLeft -> margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:entries -> entradas para el selector
+        android:spinnerMode -> modo de despliegue del selector de país
+        app:layout_constraintBottom_toBottomOf -> restricción margen inferior
+        app:layout_constraintEnd_toEndOf -> restricción margen derecho
+        app:layout_constraintHorizontal_bias -> restricción horizontal
+        app:layout_constraintStart_toEndOf -> restricción margen izquierdo
+        app:layout_constraintTop_toBottomOf -> restricción margen superior
+        app:layout_constraintVertical_bias -> restricción vertical
+
+-->
 
     <Spinner
         android:id="@+id/nationSpinner"
@@ -94,6 +201,23 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         app:layout_constraintVertical_bias="0.0" />
 
+<!--    Texto para la nacionalidad
+
+            android:id -> id referencia
+            android:layout_width -> ancho de elemento
+            android:layout_height -> altura de elemento
+            android:layout_marginStart -> margen izquierdo
+            android:layout_marginBottom -> margen inferior
+            android:text -> texto
+            android:textAppearance -> apariencia del texto
+            app:layout_constraintBottom_toTopOf -> restricción margen inferior
+            app:layout_constraintEnd_toStartOf -> restricción margen derecho
+            app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+            app:layout_constraintTop_toBottomOf -> restricción margen superior
+            app:layout_constraintVertical_bias -> restricción vertical
+
+-->
+
     <TextView
         android:id="@+id/nationText"
         android:layout_width="wrap_content"
@@ -108,26 +232,68 @@
         app:layout_constraintTop_toBottomOf="@+id/genderText"
         app:layout_constraintVertical_bias="0.5" />
 
+<!--    Casilla de verificación para el basket
+
+            android:id -> id de referencia
+            android:layout_width -> ancho de elemento
+            android:layout_height -> alto de elemento
+            android:layout_marginTop -> margen superior
+            android:layout_marginEnd -> margen derecho
+            android:text -> texto
+            app:layout_constraintEnd_toStartOf -> restricción margen derecho
+            app:layout_constraintStart_toEndOf -> restricción margen izquierdo
+            app:layout_constraintTop_toBottomOf -> restricción margen superior
+-->
+
     <CheckBox
-        android:id="@+id/tenisCheckBox"
+        android:id="@+id/basketCheckBox"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="1dp"
         android:text="@string/Basket"
-        app:layout_constraintEnd_toStartOf="@+id/footballCheckBox"
+        app:layout_constraintEnd_toStartOf="@+id/baloncestoCheckBox"
         app:layout_constraintStart_toEndOf="@+id/hobbiesText"
         app:layout_constraintTop_toBottomOf="@+id/nationSpinner" />
 
+<!--    Casilla de verificación para el baloncesto
+
+            android:id -> id de referencia
+            android:layout_width -> ancho de elemento
+            android:layout_height -> alto de elemento
+            android:layout_marginTop -> margen superior
+            android:layout_marginEnd -> margen derecho
+            android:text -> texto
+            app:layout_constraintEnd_toStartOf -> restricción margen derecho
+            app:layout_constraintStart_toEndOf -> restricción margen izquierdo
+            app:layout_constraintTop_toBottomOf -> restricción margen superior
+-->
+
     <CheckBox
-        android:id="@+id/footballCheckBox"
+        android:id="@+id/baloncestoCheckBox"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
         android:text="@string/Baloncesto"
-        app:layout_constraintStart_toEndOf="@+id/tenisCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/basketCheckBox"
         app:layout_constraintTop_toBottomOf="@+id/nationSpinner" />
+
+<!--- Texto de aficiones
+
+        android:id -> id referencia
+        android:layout_width -> ancho elemento
+        android:layout_height -> alto elemento
+        android:layout_marginStart -> margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:layout_marginEnd -> margen derecho
+        android:text -> texto
+        android:textAppearance -> estilo de texto
+        app:layout_constraintEnd_toEndOf -> restricción margen derecho
+        app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+        app:layout_constraintTop_toBottomOf -> restricción margen superior
+
+-->
 
     <TextView
         android:id="@+id/textView"
@@ -140,7 +306,26 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tenisCheckBox" />
+        app:layout_constraintTop_toBottomOf="@+id/basketCheckBox" />
+
+<!--- Texto multilinea CV
+
+        android:id -> id referencia
+        android:layout_width -> ancho de elemento
+        android:layout_height -> alto de elemento
+        android:layout_marginStart -> margen izquierdo
+        android:layout_marginEnd -> margen derecho
+        android:autofillHints -> autorelleno
+        android:ems -> tamaño texto
+        android:gravity -> posición texto
+        android:hint -> texto de pista
+        android:inputType -> tipo de entrada
+        android:textColorHint -> color texto pista
+        app:layout_constraintEnd_toEndOf -> restricción margen derecho
+        app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+        app:layout_constraintTop_toBottomOf -> restricción margen superior
+
+    -->
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -158,32 +343,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+<!--    Botón de cancelación
+
+        android:id -> id de referencia
+        android:layout_width -> ancho de elemento
+        android:layout_height -> altura de elemento
+        android:layout_marginStart -> margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:layout_marginEnd -> margen derecho
+        style -> Estilo del botón
+        android:text -> texto
+        app:layout_constraintEnd_toEndOf -> restricción margen derecho
+        app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+        app:layout_constraintTop_toBottomOf -> restricción margen superior
+
+-->
+
     <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="204dp"
+        android:id="@+id/backButton"
+        style="@style/SigninButtonStyle"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="1dp"
         android:text="@string/CancelButton"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/registerButton1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
+<!--    Botón de cancelación
+
+        android:id -> id de referencia
+        android:layout_width -> ancho de elemento
+        android:layout_height -> altura de elemento
+        android:layout_marginStart -> margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:layout_marginEnd -> margen derecho
+        style -> Estilo del botón
+        android:text -> texto
+        app:layout_constraintEnd_toEndOf -> restricción margen derecho
+        app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+        app:layout_constraintTop_toBottomOf -> restricción margen superior
+
+-->
+
     <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="204dp"
+        android:id="@+id/registerButton1"
+        style="@style/SigninButtonStyle"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="1dp"
         android:text="@string/SignIn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
+<!--    Texto de aficiones
+
+        android:id -> id referencia
+        android:layout_width -> ancho de elemento
+        android:layout_height -> alto de elemento
+        android:layout_marginStart ->  margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:gravity -> orientación texto
+        android:text -> texto
+        android:textAppearance -> estilo texto
+        app:layout_constraintBottom_toTopOf -> restricción margen inferior
+        app:layout_constraintEnd_toStartOf -> restricción margen superior
+        app:layout_constraintStart_toStartOf -> restricción margen izquierda
+        app:layout_constraintTop_toBottomOf -> restricción margen derecha
+        app:layout_constraintVertical_bias -> restricción vertical
+
+-->
 
     <TextView
         android:id="@+id/hobbiesText"
@@ -195,7 +429,7 @@
         android:text="@string/Hobbies"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/tenisCheckBox"
+        app:layout_constraintEnd_toStartOf="@+id/basketCheckBox"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nationSpinner"
         app:layout_constraintVertical_bias="0.047" />

@@ -6,55 +6,159 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextEmail"
+<!--    Elemento de inserción de texto para el mail
+
+        android:id -> id de referencia
+        android:layout_width -> ancho del elemento
+        android:layout_height -> alto del elemento
+        android:layout_marginStart -> margen izquierdo
+        android:layout_marginTop -> margen superior
+        android:layout_marginEnd -> margen derecho
+        android:autofillHints -> autorelleno
+        android:ems -> tamaño fuente
+        android:hint -> mensaje de pista
+        android:inputType -> tipo de texto a insertar
+        app:layout_constraintEnd_toEndOf -> restricción margen derecho
+        app:layout_constraintHorizontal_bias -> restricción horizontal
+        app:layout_constraintStart_toStartOf -> restricción margen izquierdo
+        app:layout_constraintTop_toBottomOf -> restricción margen superior
+
+-->
+
+    <EditText android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="32dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+<!--    Botón de inicio de sesión
+
+        android:id -> Identificador único del botón de inicio de sesión
+        android:layout_width -> Ancho del botón
+        android:layout_height -> Altura del botón
+        android:layout_marginTop -> Margen superior
+        android:layout_marginEnd -> Margen derecho
+        android:text -> Texto que se mostrará en el botón
+        app:layout_constraintBottom_toBottomOf -> Restricción del margen inferior
+        app:layout_constraintEnd_toEndOf -> Restricción del margen derecho
+        app:layout_constraintTop_toBottomOf -> Restricción del margen superior
+        app:layout_constraintVertical_bias -> Alineación vertical del botón
+
+-->
+
+    <Button
+        android:id="@+id/logInButton"
+        style="@style/LoginButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="1dp"
+        android:text="@string/LogIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.48" />
+
+<!--    Elemento de inserción de texto para la contraseña
+
+        android:id -> Identificador único del elemento
+        android:layout_width -> Ancho del elemento
+        android:layout_height -> Altura del elemento
+        android:layout_marginStart -> Margen izquierdo
+        android:layout_marginTop -> Margen superior
+        android:layout_marginEnd -> Margen derecho
+        android:autofillHints -> Sugerencias de autorelleno
+        android:ems -> Tamaño de la fuente
+        android:hint -> Mensaje de pista
+        android:inputType -> Tipo de texto a insertar
+        app:layout_constraintEnd_toEndOf -> Restricción del margen derecho
+        app:layout_constraintHorizontal_bias -> Restricción horizontal
+        app:layout_constraintStart_toStartOf -> Restricción del margen izquierdo
+        app:layout_constraintTop_toBottomOf -> Restricción del margen superior
+
+-->
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+<!--    Botón de registro
+
+        android:id -> Identificador único del botón de registro
+        android:layout_width -> Ancho del botón
+        android:layout_height -> Altura del botón
+        android:layout_marginStart -> Margen izquierdo
+        android:layout_marginTop -> Margen superior
+        android:text -> Texto que se mostrará en el botón
+        app:layout_constraintBottom_toBottomOf -> Restricción del margen inferior
+        app:layout_constraintStart_toStartOf -> Restricción del margen izquierdo
+        app:layout_constraintTop_toBottomOf -> Restricción del margen superior
+        app:layout_constraintVertical_bias -> Alineación vertical del botón
+
+-->
 
     <Button
         android:id="@+id/registerButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="204dp"
+        style="@style/SigninButtonStyle"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
         android:text="@string/SignIn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.5" />
 
-    <Button
-        android:id="@+id/logInButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="204dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="1dp"
-        android:text="@string/LogIn"
+<!--    Imagen
+
+        android:id -> Identificador único de la imagen
+        android:layout_width -> Ancho de la imagen
+        android:layout_height -> Altura de la imagen
+        android:layout_marginStart -> Margen izquierdo
+        android:layout_marginTop -> Margen superior
+        android:layout_marginEnd -> Margen derecho
+        android:contentDescription -> Descripción de la imagen para accesibilidad
+        app:layout_constraintEnd_toEndOf -> Restricción del margen derecho
+        app:layout_constraintHorizontal_bias -> Restricción horizontal
+        app:layout_constraintStart_toStartOf -> Restricción del margen izquierdo
+        app:layout_constraintTop_toTopOf -> Restricción del margen superior
+        app:srcCompat -> Fuente de la imagen
+
+-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="125dp"
+        android:contentDescription="@string/ImageDescription"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconlogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
