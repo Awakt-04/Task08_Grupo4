@@ -37,48 +37,69 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
 
-    <RadioButton
-        android:id="@+id/maleRadioButton"
-        android:layout_width="136dp"
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/Hombre"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:text="@string/Gender"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/nationSpinner"
-        app:layout_constraintEnd_toStartOf="@+id/femaleRadioButton"
-        app:layout_constraintStart_toEndOf="@+id/genderText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
         app:layout_constraintVertical_bias="0.5" />
 
-    <RadioButton
-        android:id="@+id/femaleRadioButton"
-        android:layout_width="136dp"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/Mujer"
-        app:layout_constraintBottom_toTopOf="@+id/nationSpinner"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/maleRadioButton"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/genderText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Hombre"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Mujer"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="194dp" />
+    </RadioGroup>
 
     <Spinner
         android:id="@+id/nationSpinner"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:entries="@array/Paises"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="@+id/nationText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/nationText"
-        app:layout_constraintTop_toBottomOf="@+id/maleRadioButton" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/nationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/Nationality"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/hobbiesText"
@@ -93,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="1dp"
-        android:text="@string/Tenis"
+        android:text="@string/Basket"
         app:layout_constraintEnd_toStartOf="@+id/footballCheckBox"
         app:layout_constraintStart_toEndOf="@+id/hobbiesText"
         app:layout_constraintTop_toBottomOf="@+id/nationSpinner" />
@@ -104,7 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
-        android:text="@string/Football"
+        android:text="@string/Baloncesto"
         app:layout_constraintStart_toEndOf="@+id/tenisCheckBox"
         app:layout_constraintTop_toBottomOf="@+id/nationSpinner" />
 
@@ -163,24 +184,12 @@
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
-    <TextView
-        android:id="@+id/genderText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/Gender"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/nationSpinner"
-        app:layout_constraintEnd_toStartOf="@+id/maleRadioButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
-        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/hobbiesText"
         android:layout_width="135dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:text="@string/Hobbies"

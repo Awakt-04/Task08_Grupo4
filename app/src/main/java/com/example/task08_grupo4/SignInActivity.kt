@@ -62,7 +62,12 @@ class SignInActivity : AppCompatActivity() {
                         finish()
                     } else {
                         // If sign in fails, display a message to the user.
-                        Toast.makeText(this, "Error de autentificación: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                        if (password.length<6){
+                        Toast.makeText(this, "Error de autentificación: Contraseña Demasiado Corta ", Toast.LENGTH_SHORT).show()
+                        }
+                        else{
+                            Toast.makeText(this, "Error de autentificación: El E-mail ya esta en Uso ", Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
         }
